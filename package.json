@@ -1,0 +1,45 @@
+{
+  "name": "eded-theme",
+  "version": "1.0.0",
+  "description": "A place for SFUSD Sustainability's reusable EDED components, and other theme things.",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sfusd-sustainability/theme.git"
+  },
+  "author": "Alexander Ruiz <ruiz.alex0302@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sfusd-sustainability/theme/issues"
+  },
+  "homepage": "https://github.com/sfusd-sustainability/theme#readme",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react": "^16.4.0"
+  },
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-helmet": "^5.2.1",
+    "styled-components": "^4.3.2",
+    "webpack": "^4.35.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "css-loader": "^3.0.0",
+    "file-loader": "^4.0.0",
+    "style-loader": "^0.23.1",
+    "webpack-cli": "^3.3.6"
+  }
+}
