@@ -2,6 +2,8 @@ import React from 'react'
 import data from '../../data.json'
 import styled from 'styled-components'
 
+import logo from '../img/sustainabilitylogo.webp'
+
 const StyledHeader = styled.header`
   font-family: 'Oswald';
   height: 86px;
@@ -34,12 +36,12 @@ const StyledHeader = styled.header`
 
 const Header = (props) => {
   return (
-    <header>
+    <StyledHeader>
       <img src={logo} alt={"SFUSD Sustainability Logo"} />
       <a href={props.url || data.homeUrl}>
-        <h1>{props.title || data.homeUrl}</h1>
+        <h1>{props.title || data.name}</h1>
       </a>
-    </header>
+    </StyledHeader>
   )
 }
 

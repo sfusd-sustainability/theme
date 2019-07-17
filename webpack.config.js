@@ -17,9 +17,9 @@ module.exports = {
         exclude: /(node_modules|bower_components|build)/,
         use: {
           loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env']
-          }
+          // options: {
+          //   presets: ['@babel/preset-env']
+          // }
         }
       },
       {

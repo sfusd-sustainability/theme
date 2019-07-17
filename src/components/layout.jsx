@@ -1,11 +1,11 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import styled from 'styled-components'
 
 import Header from './header'
 import Footer from './footer'
 
 import data from '../../data.json'
-import logo from '../img/sustainabilitylogo.webp'
 
 import './layout.css'
 import theme from '../theme'
