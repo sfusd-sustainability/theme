@@ -7,7 +7,10 @@ module.exports = {
     libraryTarget: 'commonjs2'
   },
   resolve: {
-    extensions: ['.js', '.jsx']
+    extensions: ['.js', '.jsx'],
+    alias: {
+      'assets': path.resolve(__dirname, 'assets')
+    }
   },
   module: {
     rules: [
@@ -26,8 +29,13 @@ module.exports = {
         test: /\.(png|jpe?g|gif|webp)$/,
         use: [
           {
-            loader: 'file-loader',
-            options: {},
+            loader: 'url-loader',
+            options: {
+              fallback: 'file-loader',
+              name: '[name][md5:hash].[ext]',
+              outputPath: 'assets/',
+              publicPath: '/assets/'
+            },
           },
         ],
       },
