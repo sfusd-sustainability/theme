@@ -52,11 +52,11 @@ let layout = (props) => {
       <HeaderBackground />
       <Content>
         <Header />
-        {props.title && (<h2>{props.title}</h2>)}
         <BackLink
           href={data.homeUrl}>
           {"<"} Back to Home
         </BackLink>
+        {props.title && (<h2>{props.title}</h2>)}
         {props.children}
         <Footer />
       </Content>
