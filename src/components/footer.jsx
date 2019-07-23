@@ -5,6 +5,11 @@ import styled from 'styled-components'
 import theme from '../theme'
 
 const StyledFooter = styled.footer`
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   background-color: ${theme.colors.primary};
   color: white;
   display: flex;

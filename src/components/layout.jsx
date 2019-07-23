@@ -44,7 +44,11 @@ const BackLink = styled.a`
 
 let layout = (props) => {
   return (
-    <div style={{position: "relative"}}>
+    <div style={{
+        position: "relative",
+        minHeight:"100vh",
+        paddingBottom: "13rem"
+      }}>
       <Helmet
         title={props.title + " | "
           + data.title}
