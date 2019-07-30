@@ -57,8 +57,8 @@ let layout = (props) => {
       <Content>
         <Header />
         <BackLink
-          href={data.homeUrl}>
-          {"<"} Back to Home
+          href={data.homeUrl+"earning-points"}>
+          {"<"} Back to Ways to Earn Points
         </BackLink>
         {props.title && (<h2>{props.title}</h2>)}
         {props.children}
